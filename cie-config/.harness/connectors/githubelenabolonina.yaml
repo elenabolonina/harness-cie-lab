@@ -1,0 +1,23 @@
+connector:
+  name: github-elenabolonina
+  identifier: githubelenabolonina
+  description:
+  orgIdentifier: default
+  projectIdentifier: bootcampcielenab
+  type: Github
+  spec:
+    url: https://github.com/elenabolonina/
+    validationRepo: harness-cie-lab
+    authentication:
+      type: Http
+      spec:
+        type: UsernameToken
+        spec:
+          username: elenabolonina
+          tokenRef: GitHubelenabolonina
+    apiAccess:
+      type: Token
+      spec:
+        tokenRef: GitHubelenabolonina
+    executeOnDelegate: true
+    type: Account
